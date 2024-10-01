@@ -29,13 +29,13 @@ addButton.click(() => {
         return;
     }
 
-    let newTask = $('<li></li>').addClass('task-item');
+    const newTask = $('<li></li>').addClass('task-item');
 
-    let spanTask = $('<span></span>').addClass('mg').text(input.val().trim());
+    const spanTask = $('<span></span>').addClass('mg').text(input.val().trim());
 
     newTask.append(spanTask);
 
-    let deleteButton = $('<button></button>')
+    const deleteButton = $('<button></button>')
         .addClass('delete-button')
         .text('Видалити');
 
